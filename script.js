@@ -28,8 +28,8 @@ function calculateEMI(){
         let EMI = (P*r* Math.pow((1+r),n)) / (Math.pow((1+r),n)-1);
         let totalInterest =(EMI * n) - P;
         let totalPayment  = totalInterest + parseFloat(P);
-        document.getElementById("emi").innerText = EMI;
-        document.getElementById("totalInterest").innerText= totalInterest;
-        document.getElementById("totalPayment").innerText= totalPayment ;
+        document.getElementById("emi").innerText = Math.ceil(EMI);
+        document.getElementById("totalInterest").innerText= Math.ceil(totalInterest);
+        document.getElementById("totalPayment").innerText= Math.ceil(totalPayment);
     }
 }
