@@ -143,6 +143,9 @@ body{
 /* Confirmation Page */
 
 #apply{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
     padding:4px 10px;
     font-size: larger;
     background-color: rgb(182, 53, 53);
