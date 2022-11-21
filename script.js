@@ -1,3 +1,5 @@
+                // EMI Calcuation
+
 let loanAmount = document.getElementById("amount");
 let interestRate = document.getElementById("interest");
 let loanDuration = document.getElementById("loanTenure");
@@ -33,3 +35,15 @@ function calculateEMI(){
         document.getElementById("totalPayment").innerText= Math.ceil(totalPayment);
     }
 }
+
+
+            // Genrate OTP
+
+const generateOtp = () => {
+    let otp = "";
+    for(let i=0; i<4; i++){
+        otp += Math.floor(Math.random()*10);
+    }
+    return Number(otp);
+}
+console.log("Generated OTP is :-", generateOtp());
