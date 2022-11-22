@@ -39,11 +39,11 @@ function calculateEMI(){
 
           // First Name and Email
 
-let email = document.getElementById("email").value;
-let fullName = document.getElementById("name").value;
-let name = fullName.split(' ');
-let firstName = name[0];
+// let email = document.getElementById("email").value;
+// let fullName = document.getElementById("name").value;
+// let name = fullName.split(' ');
+// let firstName = name[0];
 
-let deatil = "Dear "+ firstName + "Thank you for your inquiry. A 4 digit verification number has been sent to your email: "+ email +" please enter it in the following box and submit for confirmation:";
+// let deatil = "Dear "+ firstName + "Thank you for your inquiry. A 4 digit verification number has been sent to your email: "+ email +" please enter it in the following box and submit for confirmation:";
 
-export {firstName, email, deatil};
+// export {firstName, email, deatil};
