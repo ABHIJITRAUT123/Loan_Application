@@ -37,20 +37,6 @@ function calculateEMI(){
 }
 
 
-            // Genrate OTP
-
-let otp = "";
-const generateOtp = () => {
-    for(let i=0; i<4; i++){
-        otp += Math.floor(Math.random()*10);
-    }
-    console.log(otp);
-}
-generateOtp();
-
-
-
-
           // First Name and Email
 
 let email = document.getElementById("email").value;
