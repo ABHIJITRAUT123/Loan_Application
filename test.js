@@ -16,7 +16,7 @@ const generateOtp = () => {
 }
 generateOtp();
 
-
+let submit = document.getElementById("check");
 
 submit.addEventListener('click',(e)=>{
     e.preventDefault();
@@ -25,11 +25,15 @@ submit.addEventListener('click',(e)=>{
 
 function validation()
 {
+  let div = document.getElementById("confirm-content");
   let valid = document.getElementById("valid").value;
-  
-  if(valid == otp){
-    let vaildMessage = document.createElement("div").innerText = "Validation Successful!";
+  // console.log(valid);
+
+  if(valid === otp){
+    let validMessage = document.createElement("div").innerText = "Validation Successful!";
+    div.appendChild(validMessage);
   }else{
     let invalidMessage = document.createElement("div").innerText = "Validation Failed!";
+    div.appendChild(invalidMessage);
   }
 }
