@@ -10,10 +10,12 @@
 <body>
     <form>
         <label for="valid">OTP :-</label>
-        <input id="valid"  required/><br/><br/>
+        <input id="valid" type="text" required/><br/><br/>
+        
         <input type="submit" id="check" value="Validate" />
     </form>
     <br/><br/>
+    
     <div class="confirm-modal">
         <div class="confirm-modal-content">
             <h3>Here is your confirm summary</h3>
@@ -23,7 +25,8 @@
         </div>
     </div> 
     <br/><br/>
-    <h3>Thank you for visting our website !</h3>
+    
+    <h3 id="last">Thank you for visting our website !</h3>
      
     <script type="module" src="test.js"></script>
 </body>
