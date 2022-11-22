@@ -44,9 +44,9 @@ const generateOtp = () => {
     for(let i=0; i<4; i++){
         otp += Math.floor(Math.random()*10);
     }
-    return Number(otp);
+    console.log(otp);
 }
-console.log("Generated OTP is :-", generateOtp());
+generateOtp();
 
 
 
