@@ -1,12 +1,6 @@
 {
   "name": "javascript",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
   "dependencies": {
     "import": "0.0.6",
     "live-server": "1.2.2",
