@@ -5,6 +5,9 @@ let interestRate = document.getElementById("interest");
 let loanDuration = document.getElementById("loanTenure");
 let submit = document.getElementById("calculate");
 
+let correctWay = /^[A-Za-Z]+$/;
+let fullName = document.getElementById("name").value;
+
 submit.addEventListener('click',(e)=>{
     e.preventDefault();
     myFun();
@@ -12,9 +15,6 @@ submit.addEventListener('click',(e)=>{
 })
 
 function myFun(){
-  var correctWay = /^[A-Za-Z]+$/;
-  var fullName = document.getElementById("name").value;
-  
   if(fullName == ""){
     document.getElementById("msg").innerHTML = "Please Fill fullName";
     return false;
