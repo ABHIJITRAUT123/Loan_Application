@@ -8,7 +8,7 @@ let submit = document.getElementById("calculate");
 submit.addEventListener('click',(e)=>{
     e.preventDefault();
     myFun();
-    calculateEMI();
+//     calculateEMI();
 })
 
 function myFun(){
