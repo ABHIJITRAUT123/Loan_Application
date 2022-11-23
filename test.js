@@ -26,13 +26,16 @@ function validation()
 {
   let div = document.getElementById("confirm-content");
   let valid = document.getElementById("valid").value;
+  let attempt = 0;
   // console.log(valid);
 
-  if(valid === otp){
-    let validMessage = "Validation Successful!";
-    div.appendChild(validMessage);
-  }else{
-    let invalidMessage = "Validation Failed!";
-    div.appendChild(invalidMessage);
-  }
+  while(attempt < 4){
+      if(valid == otp){
+           let validMessage = "Validation Successful!";
+           div.appendChild(validMessage);
+      }else if(valid !== otp){
+            attempt = attempt + 1;
+            let invalidMessage = "Validation Failed!";
+            div.appendChild(invalidMessage);  
+      }
 }
