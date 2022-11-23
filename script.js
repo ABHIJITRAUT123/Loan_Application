@@ -65,7 +65,7 @@ function myFun(){
           // First Name and Email
 
 let email = document.getElementById("email").value;
-
+let fullName = document.getElementById("name").value;
 let name = fullName.split(' ');
 let firstName = name[0];
 
