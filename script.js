@@ -38,7 +38,7 @@ function calculateEMI(){
 }
 
 function myFun(){
-  let correctWay = /^[A-Za-Z]+$/;
+//   let correctWay = /^[A-Za-Z]+$/;
   let fullName = document.getElementById("name").value;
   
   if(fullName == ""){
