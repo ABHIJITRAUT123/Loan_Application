@@ -9,6 +9,7 @@ submit.addEventListener('click',(e)=>{
     e.preventDefault();
     myFun();
     calculateEMI();
+    alphanumeric();
 })
 
 function calculateEMI(){
@@ -38,27 +39,39 @@ function calculateEMI(){
 }
 
 function myFun(){
-//   let correctWay = /^[A-Za-Z]+$/;
+  let correctWay = /^[a-zA-Z]+ [a-zA-Z]+$/;
   let fullName = document.getElementById("name").value;
   
   if(fullName == ""){
-    document.getElementById("msg").innerHTML = "Please Fill fullName";
-    return false;
+    alert("Please Fill fullName");
   }
   if(fullName.length < 3){
-    document.getElementById("msg").innerHTML = "Please Fill min two words";
-    return false;
+    alert("Please Fill min two words");
   }
   if(fullName.length > 5){
-    document.getElementById("msg").innerHTML = "Please Fill  min 4 chars";
-    return false;
+    alert("Please Fill  min 4 chars");
   }
-//   if(fullName.match(correctWay)){
-//     true;
-//   }else{
-//     document.getElementById("msg").innerHTML = "only alphabets are allow";
-//     return false;
-//   }
+  if(fullName.match(correctWay)){
+    true;
+  }else{
+    alert("only alphabets are allow");
+  }
+}
+
+
+function alphanumeric(){
+    let pan = document.getElementById("pan").value;
+    let patt = /^([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
+  
+    if(pan.length != 10){
+      alert("Pancard No. Should be of 10 char");
+    }
+    else if(pan.match(patt)){
+      alert("Pancard No. have entered properly");
+    }
+    else{
+      alert("Wrong Pancard No.");
+    }
 }
 
 
