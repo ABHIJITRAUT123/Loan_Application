@@ -7,8 +7,35 @@ let submit = document.getElementById("calculate");
 
 submit.addEventListener('click',(e)=>{
     e.preventDefault();
+    myFun();
     calculateEMI();
 })
+
+function myFun(){
+  var correctWay = /^[A-Za-Z]+$/;
+  var fullName = document.getElementById("name").value;
+  
+  if(fullName == ""){
+    document.getElementById("msg").innerHTML = "Please Fill fullName";
+    return false;
+  }
+  if(fullName.length < 3){
+    document.getElementById("msg").innerHTML = "Please Fill min two words";
+    return false;
+  }
+  if(fullName.length > 5){
+    document.getElementById("msg").innerHTML = "Please Fill  min 4 chars";
+    return false;
+  }
+  if(fullName.match(correctWay)){
+    true;
+  }else{
+    document.getElementById("msg").innerHTML = "only alphabets are allow";
+    return false;
+  }
+}
+
+
 
 function calculateEMI(){
     // First calculate total number of months in loan tenure if selected year
@@ -40,7 +67,7 @@ function calculateEMI(){
           // First Name and Email
 
     let email = document.getElementById("email").value;
-    let fullName = document.getElementById("name").value;
+
     let name = fullName.split(' ');
     let firstName = name[0];
 
