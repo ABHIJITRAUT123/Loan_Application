@@ -28,11 +28,14 @@ function validation()
   let attempt = 0;
   // console.log(valid);
 
-  while(attempt < 4){
+  if(attempt < 4){
       if(valid == otp){
-           alert("Validation Successful!");
+           alert("Validation Successful !");
       }else if(valid !== otp){
             attempt = attempt + 1;
-            alert("Validation Failed!");  
+            alert("Validation Failed !");  
       }
+  }else{
+      alert("Welcome Pixel6 !!");
+  }
 }
