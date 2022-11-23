@@ -5,16 +5,18 @@ let interestRate = document.getElementById("interest");
 let loanDuration = document.getElementById("loanTenure");
 let submit = document.getElementById("calculate");
 
-let correctWay = /^[A-Za-Z]+$/;
-let fullName = document.getElementById("name").value;
 
-submit.addEventListener('click',(e)=>{
-    e.preventDefault();
-    myFun();
-//     calculateEMI();
-})
+
+// submit.addEventListener('click',(e)=>{
+//     e.preventDefault();
+//     myFun();
+// //     calculateEMI();
+// })
 
 function myFun(){
+  let correctWay = /^[A-Za-Z]+$/;
+  let fullName = document.getElementById("name").value;
+  
   if(fullName == ""){
     document.getElementById("msg").innerHTML = "Please Fill fullName";
     return false;
