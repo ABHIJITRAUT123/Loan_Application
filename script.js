@@ -37,29 +37,29 @@ function calculateEMI(){
     }
 }
 
-// function myFun(){
+function myFun(){
 //   let correctWay = /^[A-Za-Z]+$/;
-//   let fullName = document.getElementById("name").value;
+  let fullName = document.getElementById("name").value;
   
-//   if(fullName == ""){
-//     document.getElementById("msg").innerHTML = "Please Fill fullName";
-//     return false;
-//   }
-//   if(fullName.length < 3){
-//     document.getElementById("msg").innerHTML = "Please Fill min two words";
-//     return false;
-//   }
-//   if(fullName.length > 5){
-//     document.getElementById("msg").innerHTML = "Please Fill  min 4 chars";
-//     return false;
-//   }
+  if(fullName == ""){
+    document.getElementById("msg").innerHTML = "Please Fill fullName";
+    return false;
+  }
+  if(fullName.length < 3){
+    document.getElementById("msg").innerHTML = "Please Fill min two words";
+    return false;
+  }
+  if(fullName.length > 5){
+    document.getElementById("msg").innerHTML = "Please Fill  min 4 chars";
+    return false;
+  }
 //   if(fullName.match(correctWay)){
 //     true;
 //   }else{
 //     document.getElementById("msg").innerHTML = "only alphabets are allow";
 //     return false;
 //   }
-// }
+}
 
 
           // First Name and Email
