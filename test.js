@@ -30,10 +30,10 @@ function validation()
   // console.log(valid);
 
   if(valid === otp){
-    let validMessage = document.createElement("div").innerText = "Validation Successful!";
+    let validMessage = "Validation Successful!";
     div.appendChild(validMessage);
   }else{
-    let invalidMessage = document.createElement("div").innerText = "Validation Failed!";
+    let invalidMessage = "Validation Failed!";
     div.appendChild(invalidMessage);
   }
 }
