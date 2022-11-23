@@ -4,7 +4,6 @@ let confirm_content = document.getElementById("confirm-content");
 
 confirm_content.appendChild(deatil);
 
-
             // Genrate OTP
 
 let otp = "";
