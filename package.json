@@ -1,0 +1,20 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "import": "0.0.6",
+    "live-server": "1.2.2",
+    "module": "1.2.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
