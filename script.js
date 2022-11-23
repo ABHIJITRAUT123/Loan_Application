@@ -38,6 +38,8 @@ function calculateEMI(){
     }
 }
 
+                //  Full Name Validation
+
 function myFun(){
   let correctWay = /^[a-zA-Z]+ [a-zA-Z]+$/;
   let fullName = document.getElementById("name").value;
@@ -57,6 +59,8 @@ function myFun(){
     alert("only alphabets are allow");
   }
 }
+
+          // Pan Card Validation
 
 
 function alphanumeric(){
