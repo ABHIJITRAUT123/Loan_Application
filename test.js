@@ -24,18 +24,15 @@ submit.addEventListener('click',(e)=>{
 
 function validation()
 {
-  let div = document.getElementById("confirm-content");
   let valid = document.getElementById("valid").value;
   let attempt = 0;
   // console.log(valid);
 
   while(attempt < 4){
       if(valid == otp){
-           let validMessage = "Validation Successful!";
-           div.appendChild(validMessage);
+           alert("Validation Successful!");
       }else if(valid !== otp){
             attempt = attempt + 1;
-            let invalidMessage = "Validation Failed!";
-            div.appendChild(invalidMessage);  
+            alert("Validation Failed!");  
       }
 }
