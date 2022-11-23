@@ -9,22 +9,26 @@
         <p class="heading">User Deatails</p>
         <div class="input-container">
             <label for="name">Full Name :-</label>
-            <input type="text" id="name" minlength="2" required>            
+            <input type="text" value="" id="name" minlength="2" required>
+            <span id="msg"></span>
         </div>
         <div class="input-container">
             <label for="email">Email ID :-</label>
-            <input type="email" id="email" required>            
+            <input type="email" value="" id="email" required>            
         </div>
         <div class="input-container">
             <label for="pan">PAN No :-</label>
-            <input type="text" id="pan" pattern="[a-zA-Z0-9]+" required>            
+            <input type="text" id="pan" value="" pattern="[a-zA-Z0-9]+" required>            
         </div>
+        <div class="submit-container">
+            <input type="submit" value="Submit" id="calculate">            
+        </div>
+        
         <p class="heading">EMI Calculator</p>
         <div class="input-container">
             <label for="amount">Loan Amount :-</label>
             <input type="number" id="amount" maxlength="9" required>            
         </div>
-<!--         <p><h3>Converted:- <span id="converted"></span></h3><p> -->
         <div class="input-container">
             <label for="interest">Interest Rate(%) :-</label>
             <input type="number" id="interest" step="0.01" required>            
@@ -37,9 +41,7 @@
                 <input type="radio" name="btn" id="month"><label for="month">Month</label>
             </div>
         </div>
-        <div class="submit-container">
-            <input type="submit" value="Submit" id="calculate">            
-        </div>
+        
         
         <div class="output">
             <p >Loan EMI                           <span id="emi"         ></span></p>
